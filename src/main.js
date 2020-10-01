@@ -1,7 +1,7 @@
 'use strict';
 
 function getElement(method, element, boolean) {
-     let Error = 'Paramaters must be a string or a vaild method, Or the element was not found.\n[id, class]';
+     let Error = 'Paramaters must be a string or a vaild method, Or the element was not found.\n[id, class, tag]';
      let methods = ['class', 'id', 'tag']
      if (typeof method !== 'string' || typeof element !== 'string' || !methods.includes(method.toLowerCase())) {
           throw TypeError(Error)
